@@ -1,0 +1,8 @@
+role: wholesaler
+agent_name: wholesaler-base-stock
+entrypoint: agent.py:WholesalerAgent
+memory_mode: bounded_buffer
+memory_max_entries: 16
+supports_tools: []
+supports_messages: []
+sdk_version: "1.0.0"

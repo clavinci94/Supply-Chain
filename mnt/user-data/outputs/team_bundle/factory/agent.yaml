@@ -1,0 +1,8 @@
+role: factory
+agent_name: factory-base-stock
+entrypoint: agent.py:FactoryAgent
+memory_mode: bounded_buffer
+memory_max_entries: 16
+supports_tools: []
+supports_messages: []
+sdk_version: "1.0.0"

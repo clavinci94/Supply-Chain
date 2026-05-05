@@ -1,0 +1,12 @@
+{
+  "team_id": "REPLACE-ME-team-id",
+  "team_name": "REPLACE-ME Team Name",
+  "submission_version": "0.1.0",
+  "sdk_version": "1.0.0",
+  "agents": {
+    "retailer": "retailer",
+    "wholesaler": "wholesaler",
+    "distributor": "distributor",
+    "factory": "factory"
+  }
+}

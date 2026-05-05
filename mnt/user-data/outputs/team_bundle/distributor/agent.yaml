@@ -1,0 +1,8 @@
+role: distributor
+agent_name: distributor-base-stock
+entrypoint: agent.py:DistributorAgent
+memory_mode: bounded_buffer
+memory_max_entries: 16
+supports_tools: []
+supports_messages: []
+sdk_version: "1.0.0"
