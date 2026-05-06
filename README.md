@@ -76,6 +76,8 @@ not realistic.
 
 ## Run locally
 
+### macOS (bash / zsh)
+
 ```bash
 # Install the bench wheel (provided separately by the course)
 pip install supplychainbench_student-0_3_0-py3-none-any.whl
@@ -88,6 +90,26 @@ supplychainbench test-bundle team_bundle
 supplychainbench run-scenario --bundle team_bundle \
     --scenario s1.1 --seed 0 --out runs \
     --class-run-id dev --team-id $(jq -r .team_id team_bundle/manifest.json)
+
+# Read metrics
+supplychainbench metrics --class-run-id dev --out runs
+```
+
+### Windows (PowerShell)
+
+```powershell
+# Install the bench wheel (provided separately by the course)
+pip install supplychainbench_student-0_3_0-py3-none-any.whl
+
+# Validate the bundle (5-tick smoke test)
+supplychainbench test-bundle team_bundle
+# Expected: OK
+
+# Run a scenario (read team_id without jq; use backtick for line continuation)
+$teamId = (Get-Content team_bundle/manifest.json | ConvertFrom-Json).team_id
+supplychainbench run-scenario --bundle team_bundle `
+    --scenario s1.1 --seed 0 --out runs `
+    --class-run-id dev --team-id $teamId
 
 # Read metrics
 supplychainbench metrics --class-run-id dev --out runs
