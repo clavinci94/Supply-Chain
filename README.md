@@ -93,19 +93,6 @@ supplychainbench run-scenario --bundle team_bundle \
 supplychainbench metrics --class-run-id dev --out runs
 ```
 
-## Before submitting
-
-1. Open `manifest.json` and replace the placeholders:
-   - `"team_id": "REPLACE-ME-team-id"` → your team's ID
-   - `"team_name": "REPLACE-ME Team Name"` → your team's name
-2. Validate: `supplychainbench test-bundle team_bundle` must print `OK`.
-3. Pack:
-   ```bash
-   cd team_bundle
-   zip -r ../supplychainbench_submission.zip . -x '*.pyc' '*/__pycache__/*'
-   ```
-4. Upload `supplychainbench_submission.zip`.
-
 ## File structure
 
 ```
@@ -153,4 +140,3 @@ no fixed `TARGET_BASE`. The four constants in the code are:
 | `WINDOW` | 1 / 1 / 3 / 3 (per tier) | Bullwhip principle: smooth more the further from real demand. |
 | `PRIOR_DEMAND` | 5 | Neutral seed; replaced by real observations within `WINDOW` ticks. |
 
-None of these were tuned to s1.1 or s2.3 specifically.
