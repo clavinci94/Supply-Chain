@@ -1,12 +1,8 @@
 {
-  "team_id": "REPLACE-ME-team-id",
-  "team_name": "REPLACE-ME Team Name",
-  "submission_version": "0.1.0",
-  "sdk_version": "1.0.0",
+  "team_name provisorisch": "Claudio, Flavio, Jan, Robin, Andrej",
   "agents": {
-    "retailer": "retailer",
-    "wholesaler": "wholesaler",
-    "distributor": "distributor",
-    "factory": "factory"
-  }
+    "retailer": "Claudio",
+    "wholesaler": "Flavio",
+    "distributor": "Jan",
+    "factory": "Robin"
 }
